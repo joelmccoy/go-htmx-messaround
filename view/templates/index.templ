@@ -1,0 +1,10 @@
+package templates
+
+import (
+	"github.com/joelmccoy/go-htmx-messaround/view/request"
+)
+
+templ Index() {
+	<h1>Hello World!!!</h1>
+	@request.Request()
+}
