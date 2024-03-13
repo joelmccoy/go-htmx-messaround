@@ -23,7 +23,7 @@ func Body() templ.Component {
 			templ_7745c5c3_Var1 = templ.NopComponent
 		}
 		ctx = templ.ClearChildren(ctx)
-		templ_7745c5c3_Err = templ.WriteWatchModeString(templ_7745c5c3_Buffer, 1)
+		_, templ_7745c5c3_Err = templ_7745c5c3_Buffer.WriteString("<div class=\"container\"><div class=\"row\"><div class=\"text-center\"><h2>Access Request App</h2></div></div><div class=\"row\"><div class=\"col-8\"><h2>Active Requests</h2></div><div class=\"col-4\"><h2>Add a request</h2></div><div class=\"row\"><div class=\"col-8\"><table class=\"table\"><thead><tr><th>User</th><th>Provider</th><th>Environment</th><th>Grant</th></tr></thead></table></div><div class=\"col-4\"><form id=\"request-form\"><div class=\"form-group\"><label for=\"provider\">Provider</label> <input type=\"text\" class=\"form-control\" id=\"provider\" name=\"provider\" required></div><div class=\"form-group\"><label for=\"environment\">Environment</label> <input type=\"text\" class=\"form-control\" id=\"environment\" name=\"environment\" required></div><div class=\"form-group\"><label for=\"grant\">Grant</label> <input type=\"text\" class=\"form-control\" id=\"grant\" name=\"grant\" required></div><div class=\"form-group\"><button type=\"submit\" class=\"btn btn-primary\">Submit</button></div></form></div></div></div></div>")
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
 		}

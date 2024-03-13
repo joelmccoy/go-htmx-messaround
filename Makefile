@@ -7,7 +7,7 @@ templ-watch:
 	templ generate --watch
 
 .PHONY: dev
-dev:
+dev: templ-generate
 	go build -o ./tmp/$(APP_NAME) ./cmd/$(APP_NAME)/main.go && air
 
 .PHONY: build

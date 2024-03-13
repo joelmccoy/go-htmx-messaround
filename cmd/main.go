@@ -28,6 +28,7 @@ func main() {
 
 	// Routes
 	e.GET("/", handler)
+	e.GET("/login", handle_login)
 
 	// Start server
 	e.Logger.Fatal(e.Start(":8080"))
@@ -35,6 +36,10 @@ func main() {
 
 func handler(c echo.Context) error {
 	return render(c, templates.Layout())
+}
+
+func handle_login(c echo.Context) error {
+	return render(c, templates.Login())
 }
 
 func render(c echo.Context, t templ.Component) error {
